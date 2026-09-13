@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nokshi Kitchen — Bengali restaurant in Dhanmondi, Dhaka</title>
+<meta name="description" content="A demo restaurant site by Future Stack Solutions: menu with prices, photo gallery, table booking and opening hours, in Bangla and English.">
+<link rel="icon" href="https://podenapata-sys.github.io/fs-solutions/assets/favicon.ico" sizes="any">
+<link rel="canonical" href="https://podenapata-sys.github.io/fs-solutions/demos/restaurant/">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nokshi Kitchen — Bengali restaurant in Dhanmondi, Dhaka">
+<meta property="og:description" content="A demo restaurant site by Future Stack Solutions: menu with prices, photo gallery, table booking and opening hours, in Bangla and English.">
+<meta property="og:url" content="https://podenapata-sys.github.io/fs-solutions/demos/restaurant/">
+<meta property="og:image" content="https://podenapata-sys.github.io/fs-solutions/assets/share-1200x630.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#c2410c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../demo.css?v=1">
+<style>
+:root{--accent:#c2410c;--bg:#fffdfa;--bg-2:#faf3ec;--line:#eee0d3;--ink:#211610}
+</style>
+</head>
+<body>
+
+<!-- Every demo says what it is, at the top, before anything else. The businesses,
+     prices, phone numbers and people below are all invented. -->
+<div class="demo-bar">
+  <div class="wrap">
+    <b data-en="Demo site" data-bn="ডেমো সাইট">Demo site</b>
+    <span data-en="Sample content — this business is not real." data-bn="নমুনা কনটেন্ট — এই ব্যবসাটি বাস্তব নয়।">Sample content — this business is not real.</span>
+    <a href="../../" data-en="Built by Future Stack Solutions" data-bn="তৈরি করেছে ফিউচার স্ট্যাক সলিউশনস">Built by Future Stack Solutions</a>
+  </div>
+</div>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="hd-logo" href="#top">Nokshi Kitchen<small data-en="Bengali kitchen · Dhanmondi" data-bn="বাঙালি রান্নাঘর · ধানমন্ডি">Bengali kitchen · Dhanmondi</small></a>
+    <nav class="hd-nav" aria-label="Main">
+      <a href="#menu" data-en="Menu" data-bn="মেনু">Menu</a>
+      <a href="#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+      <a href="#hours" data-en="Hours" data-bn="সময়">Hours</a>
+      <a href="#book" data-en="Book a table" data-bn="টেবিল বুক">Book a table</a>
+    </nav>
+    <div class="hd-act">
+      <button class="lang" id="langBtn" type="button" aria-label="Switch language">বাংলা</button>
+      <a class="btn btn-sm" href="https://wa.me/8801632932249" target="_blank" rel="noopener"
+         data-en="WhatsApp" data-bn="WhatsApp">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" data-en="Restaurant demo" data-bn="রেস্টুরেন্ট ডেমো">Restaurant demo</p>
+      <h1 data-en="Home cooking, the way Dhaka remembers it" data-bn="ঘরের রান্না, ঢাকা যেভাবে মনে রাখে">Home cooking, the way Dhaka remembers it</h1>
+      <p class="lede" data-en="Bhuna khichuri, shorshe ilish and slow-cooked beef rezala, made fresh every day. Dine in at Dhanmondi or order for delivery across the city." data-bn="ভুনা খিচুড়ি, সরষে ইলিশ আর ধীরে রান্না করা বিফ রেজালা — প্রতিদিন টাটকা। ধানমন্ডিতে বসে খান, বা সারা শহরে ডেলিভারি নিন।">Bhuna khichuri, shorshe ilish and slow-cooked beef rezala, made fresh every day. Dine in at Dhanmondi or order for delivery across the city.</p>
+      <div class="hero-cta">
+        <a class="btn btn-lg" href="#book" data-en="Book a table" data-bn="টেবিল বুক করুন">Book a table</a>
+        <a class="btn btn-lg btn-ghost" href="#menu" data-en="See the menu" data-bn="মেনু দেখুন">See the menu</a>
+      </div>
+    </div>
+    <div class="ph ph-4x3"><span data-en="Your restaurant photo" data-bn="আপনার রেস্টুরেন্টের ছবি">Your restaurant photo</span></div>
+  </div>
+  <div class="wrap">
+    <ul class="grid g3" style="margin-top:clamp(30px,4vw,52px)">
+      <li class="card"><div class="card-body">
+        <h3 style="color:var(--accent);font-size:1.5rem">৳0</h3>
+        <p data-en="monthly hosting" data-bn="মাসিক হোস্টিং">monthly hosting</p></div></li>
+      <li class="card"><div class="card-body">
+        <h3 style="color:var(--accent);font-size:1.5rem">7</h3>
+        <p data-en="days a week" data-bn="দিন খোলা">days a week</p></div></li>
+      <li class="card"><div class="card-body">
+        <h3 style="color:var(--accent);font-size:1.5rem">4.8</h3>
+        <p data-en="average rating" data-bn="গড় রেটিং">average rating</p></div></li>
+    </ul>
+  </div>
+</section>
+<section class="sec sec-alt" id="menu">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 data-en="The menu" data-bn="মেনু">The menu</h2>
+      <p data-en="Prices in taka, updated by the restaurant from a dashboard — no developer needed." data-bn="মূল্য টাকায়, রেস্টুরেন্ট নিজেই ড্যাশবোর্ড থেকে বদলায় — ডেভেলপার লাগে না।">Prices in taka, updated by the restaurant from a dashboard — no developer needed.</p>
+    </header>
+    <h3 style="margin:30px 0 14px" data-en="Rice &amp; biryani" data-bn="ভাত ও বিরিয়ানি">Rice &amp; biryani</h3>
+    <div class="rows">
+      <div class="row">
+        <span><b data-en="Kachchi biryani" data-bn="কাচ্চি বিরিয়ানি">Kachchi biryani</b><small data-en="Mutton, aged basmati, kewra" data-bn="খাসি, পুরনো বাসমতি, কেওড়া">Mutton, aged basmati, kewra</small></span>
+        <span class="price">৳420</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Bhuna khichuri" data-bn="ভুনা খিচুড়ি">Bhuna khichuri</b><small data-en="With beef or egg" data-bn="গরু বা ডিমসহ">With beef or egg</small></span>
+        <span class="price">৳260</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Morog polao" data-bn="মোরগ পোলাও">Morog polao</b><small data-en="Half chicken, ghee rice" data-bn="আধা মুরগি, ঘি ভাত">Half chicken, ghee rice</small></span>
+        <span class="price">৳340</span>
+      </div>
+    </div>
+    <h3 style="margin:30px 0 14px" data-en="Fish &amp; curry" data-bn="মাছ ও তরকারি">Fish &amp; curry</h3>
+    <div class="rows">
+      <div class="row">
+        <span><b data-en="Shorshe ilish" data-bn="সরষে ইলিশ">Shorshe ilish</b><small data-en="Hilsa in mustard, seasonal" data-bn="সরষে ইলিশ, মৌসুমি">Hilsa in mustard, seasonal</small></span>
+        <span class="price">৳520</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Beef rezala" data-bn="বিফ রেজালা">Beef rezala</b><small data-en="Slow-cooked, six hours" data-bn="ছয় ঘণ্টা ধীরে রান্না">Slow-cooked, six hours</small></span>
+        <span class="price">৳380</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Chingri malaikari" data-bn="চিংড়ি মালাইকারি">Chingri malaikari</b><small data-en="Prawn in coconut" data-bn="নারকেলে চিংড়ি">Prawn in coconut</small></span>
+        <span class="price">৳480</span>
+      </div>
+    </div>
+    <h3 style="margin:30px 0 14px" data-en="Sides &amp; sweets" data-bn="সাইড ও মিষ্টি">Sides &amp; sweets</h3>
+    <div class="rows">
+      <div class="row">
+        <span><b data-en="Begun bhaja" data-bn="বেগুন ভাজা">Begun bhaja</b></span>
+        <span class="price">৳90</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Mishti doi" data-bn="মিষ্টি দই">Mishti doi</b><small data-en="Clay pot" data-bn="মাটির হাঁড়িতে">Clay pot</small></span>
+        <span class="price">৳120</span>
+      </div>
+      <div class="row">
+        <span><b data-en="Borhani" data-bn="বোরহানি">Borhani</b><small data-en="Glass" data-bn="গ্লাস">Glass</small></span>
+        <span class="price">৳80</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec" id="gallery">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 data-en="Inside the restaurant" data-bn="রেস্টুরেন্টের ভেতরে">Inside the restaurant</h2>
+      <p data-en="On a real project these are your photographs." data-bn="আসল প্রজেক্টে এখানে আপনার তোলা ছবি থাকবে।">On a real project these are your photographs.</p>
+    </header>
+    <div class="grid g3">
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+      <div class="ph ph-4x3"><span data-en="Your photo" data-bn="আপনার ছবি">Your photo</span></div>
+    </div>
+  </div>
+</section>
+<section class="sec sec-alt" id="hours">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 data-en="Opening hours" data-bn="খোলার সময়">Opening hours</h2>
+      
+    </header>
+    <div class="grid g2">
+      <div class="rows">
+        <div class="row"><b data-en="Saturday – Thursday" data-bn="শনি – বৃহস্পতি">Saturday – Thursday</b>
+        <span>12:00 – 23:00</span></div>
+        <div class="row"><b data-en="Friday" data-bn="শুক্রবার">Friday</b>
+        <span>15:00 – 23:00</span></div>
+        <div class="row"><b data-en="Delivery" data-bn="ডেলিভারি">Delivery</b>
+        <span><span data-en="Until 22:30" data-bn="রাত ১০:৩০ পর্যন্ত">Until 22:30</span></span></div>
+      </div>
+      <div>
+        <h3 data-en="Where to find us" data-bn="আমরা কোথায়">Where to find us</h3>
+        <p style="color:var(--ink-2);margin-top:10px" data-en="House 42, Road 9/A, Dhanmondi, Dhaka 1209" data-bn="বাড়ি ৪২, রোড ৯/এ, ধানমন্ডি, ঢাকা ১২০৯">House 42, Road 9/A, Dhanmondi, Dhaka 1209</p>
+        <p style="color:var(--ink-2);margin-top:10px">01XXX-XXXXXX</p>
+        <div class="ph ph-16x9" style="margin-top:18px"><span data-en="Your map or photo" data-bn="আপনার ম্যাপ বা ছবি">Your map or photo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec" id="contact">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 data-en="Book a table" data-bn="টেবিল বুক করুন">Book a table</h2>
+      <p data-en="On a real site this reaches the restaurant by email, in a dashboard and in a Google Sheet." data-bn="আসল সাইটে এটি ইমেইলে, ড্যাশবোর্ডে ও গুগল শিটে রেস্টুরেন্টের কাছে পৌঁছায়।">On a real site this reaches the restaurant by email, in a dashboard and in a Google Sheet.</p>
+    </header>
+    <form class="form wide" data-demo>
+      <div class="field">
+        <label data-en="Name" data-bn="নাম">Name</label>
+        <input type="text" placeholder="Your name" data-ph-en="Your name" data-ph-bn="আপনার নাম" required>
+      </div>
+      <div class="field">
+        <label data-en="Phone" data-bn="ফোন">Phone</label>
+        <input type="tel" placeholder="01XXXXXXXXX" data-ph-en="01XXXXXXXXX" data-ph-bn="01XXXXXXXXX" required>
+      </div>
+      <div class="field">
+        <label data-en="Date" data-bn="তারিখ">Date</label>
+        <input type="date" required>
+      </div>
+      <div class="field">
+        <label data-en="Guests" data-bn="অতিথি সংখ্যা">Guests</label>
+        <input type="number" placeholder="2" data-ph-en="2" data-ph-bn="২" required>
+      </div>
+      <div class="field full">
+        <label data-en="Any special request" data-bn="বিশেষ কিছু বলার থাকলে">Any special request</label>
+        <textarea></textarea>
+      </div>
+      <div class="field full">
+        <button class="btn btn-lg" type="submit" data-en="Request a table" data-bn="টেবিলের অনুরোধ">Request a table</button>
+        <p class="form-note form-result" hidden></p>
+        <p class="form-note" data-en="This form is part of a demo. Nothing is sent or stored." data-bn="এই ফর্মটি ডেমোর অংশ। কিছুই পাঠানো বা সংরক্ষণ করা হয় না।">This form is part of a demo. Nothing is sent or stored.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-grid">
+    <div>
+      <h4>Nokshi Kitchen</h4>
+      <p data-en="Bengali kitchen · Dhanmondi" data-bn="বাঙালি রান্নাঘর · ধানমন্ডি">Bengali kitchen · Dhanmondi</p>
+      <p style="margin-top:14px" data-en="Invented business, invented details — this page exists to show how a real one would work." data-bn="কাল্পনিক ব্যবসা, কাল্পনিক তথ্য — আসল সাইট কেমন হবে তা দেখানোর জন্যই এই পাতা।">Invented business, invented details — this page exists to show how a real one would work.</p>
+    </div>
+    <div>
+      <h4 data-en="Pages" data-bn="পাতা">Pages</h4>
+      <a href="#menu" data-en="Menu" data-bn="মেনু">Menu</a>
+      <a href="#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+      <a href="#hours" data-en="Hours" data-bn="সময়">Hours</a>
+      <a href="#book" data-en="Book a table" data-bn="টেবিল বুক">Book a table</a>
+    </div>
+    <div>
+      <h4 data-en="Other demos" data-bn="অন্যান্য ডেমো">Other demos</h4>
+      <a href="../shop/">Rongdhonu</a>
+      <a href="../property/">Nagar Properties</a>
+      <a href="../profile/">Rafiq Hasan</a>
+      <a href="../../" data-en="← Future Stack Solutions" data-bn="← ফিউচার স্ট্যাক সলিউশনস">← Future Stack Solutions</a>
+    </div>
+  </div>
+  <div class="wrap ft-btm">
+    <span>© <span id="yr">2026</span> Nokshi Kitchen · <span data-en="demo site" data-bn="ডেমো সাইট">demo site</span></span>
+    <span><a href="../../" data-en="Built by Future Stack Solutions" data-bn="তৈরি করেছে ফিউচার স্ট্যাক সলিউশনস">Built by Future Stack Solutions</a></span>
+  </div>
+</footer>
+
+<script src="../demo.js?v=1"></script>
+</body>
+</html>

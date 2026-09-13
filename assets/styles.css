@@ -154,6 +154,26 @@ html[data-lang="bn"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size
 .card h3{font-size:1.1rem;margin-bottom:10px}
 .card p{color:var(--ink-2);font-size:.96rem}
 
+/* ── demo cards ──
+   Four links out to working sites. Styled as destinations rather than thumbnails:
+   there is no screenshot, because the point is that you can open the real thing. */
+.demo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.demo-card{display:block;text-decoration:none;background:var(--bg-2);border:1px solid var(--line);
+           border-radius:var(--r-lg);padding:26px 28px;position:relative;overflow:hidden;
+           transition:transform .2s,border-color .2s,background .2s}
+.demo-card::before{content:"";position:absolute;inset:0 0 auto;height:2px;
+                   background:linear-gradient(90deg,var(--accent),transparent);
+                   opacity:0;transition:opacity .2s}
+.demo-card:hover{transform:translateY(-4px);border-color:var(--line-2);background:var(--bg-3)}
+.demo-card:hover::before{opacity:1}
+.demo-kind{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.13em;
+           text-transform:uppercase;color:var(--accent-2);background:var(--accent-dim);
+           border-radius:999px;padding:5px 11px;margin-bottom:14px}
+html[data-lang="bn"] .demo-kind{letter-spacing:.02em;text-transform:none;font-size:.8rem}
+.demo-card h3{font-size:1.22rem;margin-bottom:8px}
+.demo-card p{color:var(--ink-2);font-size:.95rem}
+.demo-go{display:inline-block;margin-top:16px;font-weight:600;font-size:.9rem;color:var(--accent-2)}
+
 /* ── steps ── */
 .steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:30px;max-width:74ch}
 .steps li{counter-increment:s;position:relative;padding-left:58px}
@@ -203,14 +223,17 @@ html[data-lang="bn"] .foot-brand b{letter-spacing:.04em;text-transform:none;font
    without a job, and machinery is what breaks. */
 @media(max-width:940px){
   .metrics{grid-template-columns:repeat(3,1fr)}
+  .demo-grid{grid-template-columns:1fr}
+  /* Five nav links plus the logo plus a button no longer fit here. The nav collapses
+     before the grids do — adding the Demos link is what pushed it over. */
+  .nav{display:none}
+  .head-act{margin-left:auto}
   .cards{grid-template-columns:1fr 1fr}
   .case-grid,.shot-row{grid-template-columns:1fr}
   .site-foot .tiny{text-align:left}
 }
 @media(max-width:760px){
   body{font-size:16px}
-  .nav{display:none}
-  .head-act{margin-left:auto}
   .hero-facts li{min-width:100%;max-width:none}
   .shot-phone img{max-width:260px}
   /* The header CTA goes: the logo, the language toggle and a button cannot share a
