@@ -12,8 +12,8 @@
   --bg-2:#ffffff;
   --dark:#0e1117;
   --dark-2:#171b24;
-  --accent:#4f46e5;
-  --accent-2:#6366f1;
+  --accent:#0a6ce8;
+  --accent-2:#2b8cff;
   --amber:#d97706;
   --r:16px;
   --r-lg:22px;
@@ -77,8 +77,8 @@ a{color:inherit}
 /* ── hero ── */
 .hero{padding:clamp(56px,9vw,104px) 0 clamp(44px,6vw,72px);
       background:
-        radial-gradient(900px 340px at 12% -8%,rgba(79,70,229,.10),transparent 62%),
-        radial-gradient(700px 300px at 92% 6%,rgba(217,119,6,.09),transparent 60%)}
+        radial-gradient(900px 340px at 12% -8%,rgba(10,108,232,.13),transparent 62%),
+        radial-gradient(700px 300px at 92% 6%,rgba(43,140,255,.10),transparent 60%)}
 .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
          color:var(--accent);margin-bottom:18px}
 html[data-lang="bn"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size:.86rem}
@@ -103,7 +103,7 @@ html[data-lang="bn"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size
 .case{padding:clamp(56px,8vw,92px) 0;background:var(--dark);color:#e8eaf0}
 .case .sec-head h2{color:#fff}
 .case .sec-sub{color:#a8afbf}
-.case .eyebrow{color:#a5b4fc}
+.case .eyebrow{color:#7cb6ff}
 .shot{margin:0}
 .shot img{border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.1);
           box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
@@ -173,6 +173,11 @@ html[data-lang="bn"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size
 .site-foot{padding:36px 0;background:var(--bg-2);border-top:1px solid var(--line)}
 .foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 32px;align-items:center}
 .site-foot p{font-size:.88rem;color:var(--muted)}
+/* The strapline from the logo. Kept quiet and lowercase-weighted so it reads as a
+   signature rather than a second headline competing with the contact section above. */
+.foot-brand b{display:block;font-family:var(--f-head);font-weight:600;font-size:.8rem;
+              letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:5px}
+html[data-lang="bn"] .foot-brand b{letter-spacing:.04em;text-transform:none;font-size:.86rem}
 .site-foot .tiny{color:var(--muted);max-width:56ch;text-align:right}
 
 /* ── responsive ──
